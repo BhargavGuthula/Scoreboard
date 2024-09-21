@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="App.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+    <script src="App.js" defer></script>
+</head>
+<body>
+    
+    <div id="container">
+        <div class="team">
+            <h2>HOME</h2>
+            <div class="score" id="homeScore">0</div>
+                <div class="My-bt">
+                <button onclick="addOne('home')">+1</button>
+                <button onclick="addTwo('home')">+2</button>
+                <button onclick="addThree('home')">+3</button>
+            </div>
+        </div>
+        <div class="team">
+            <h2>GUEST</h2>
+            <div class="score" id="awayScore">0</div>
+            <div class="My-bt">
+                <button onclick="addOne('away')">+1</button>
+                <button onclick="addTwo('away')">+2</button>
+                <button onclick="addThree('away')">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <button id = "my-btn" onclick="Reset()" >
+        Reset
+    </button>
+
+</body>
+</html>
